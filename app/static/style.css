@@ -1,0 +1,94 @@
+body {
+    padding-top: 56px;
+    padding-bottom: 50px;
+}
+
+/* Cartões de produto */
+.card {
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagens de produto */
+.card-img-top,
+.product-img {
+    height: 200px;
+    object-fit: contain;
+}
+
+.product-img {
+    padding: 20px;
+}
+
+/* Itens do carrinho */
+.cart-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+#cartItems {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/* Offcanvas (carrinho) */
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Seção admin */
+#adminSection {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Badge do carrinho */
+#cartBadge {
+    font-size: 0.7rem;
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -5px;
+    right: -5px;
+}
+
+/* Alertas */
+.alert {
+    transition: all 0.3s ease;
+}
+
+/* Alertas responsivos */
+@media (max-width: 576px) {
+    .alert {
+        right: 10px !important;
+        left: 10px !important;
+        bottom: 10px !important;
+        max-width: calc(100% - 20px) !important;
+    }
+}
+
+/* Animações de alerta */
+.fade {
+    transition: opacity 0.15s linear;
+}
+
+.show {
+    opacity: 1;
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
