@@ -107,7 +107,7 @@ Instale o Docker de acordo com seu sistema operacional:
     📥 Ubuntu
     📥 MacOS
 
-    ⚠️ usuários de windows, é importante verificar [se a virtualização de sua máquina está ativada na BIOS de sua máquina](https://support.microsoft.com/pt-br/windows/habilitar-a-virtualiza%C3%A7%C3%A3o-no-windows-c5578302-6e43-4b4b-a449-8ced115f58e1), pois ela é fundamental para habilitação do WSL2. Em seguida, você deve seguir os passos de instalação e habilitação do [WSL2](https://learn.microsoft.com/pt-br/windows/wsl/install), para execução do Docker.
+⚠️ usuários de windows, é importante verificar [se a virtualização de sua máquina está ativada na BIOS de sua máquina](https://support.microsoft.com/pt-br/windows/habilitar-a-virtualiza%C3%A7%C3%A3o-no-windows-c5578302-6e43-4b4b-a449-8ced115f58e1), pois ela é fundamental para habilitação do WSL2. Em seguida, você deve seguir os passos de instalação e habilitação do [WSL2](https://learn.microsoft.com/pt-br/windows/wsl/install), para execução do Docker.
 
 
 ### 4. Acesse a pasta que você criou onde já possui ou possuirá o também o repositório do back-end via Visual Studio Code (ou editor de sua preferência):
@@ -116,9 +116,18 @@ Instale o Docker de acordo com seu sistema operacional:
 cd [pasta_que_voce_criou] > MVP_Sprint-3_Front-end
 ```
 
+### Segue estrutura do projeto para rodar via docker:
+
+```
+[pasta_que_você_criou]/ 
+    ├── MVP_Sprint-3_back-end/ 
+____├── MVP_Sprint-3_Front-end 
+_____________├── docker-compose.yml
+```
+
 ### 🧱 🚀 5. Construa a Imagem e Rode o container
 
-Dentro do vs code ou editor de sua preferência, acesse a pasta 
+E rode o código para contruir as imagens e rodar os containers:
 
 ```bash
 docker-compose up --build
