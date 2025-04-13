@@ -42,25 +42,27 @@ _______├── index.html
 _______├── order_manager.html
 _______├── app.py
 _______├── Dockerfile
+_______├── Docke-compose
 _______├── requirements.txt
 _______└── README.md
 
-### ▶️ Passos para execução
+## ▶️ Passos para execução local
 
-1. Clone este repositório:
+### 1. Crie uma pasta e clone o repositório abaixo: (esse repositório deve estar na mesma pasta junto ao repositório do back-end)
 
-```bash
-git clone https://github.com/victorazevedo0/mvp-sprint-3---Loja-virtual.git
-```
-2. Acesso a pasta frontend:
+### 2. Clone este repositório:
 
 ```bash
-cd mvp-sprint-3---Loja-virtual/frontend
+git clone https://github.com/victorazevedo0/MVP_Sprint-3_Front-end.git
 ```
 
-3. Abra o projeto no Visual Studio Code (ou editor de sua preferência).
+### 3. Abra o projeto no Visual Studio Code (ou editor de sua preferência) acessando a pasta que você criou (onde já possui ou possuirá o também o repositório do back-end).
+
+```bash
+cd [pasta_que_voce_criou] > MVP_Sprint-3_Front-end
+```
    
-4. Execute com o **Live Server** clicando com o botão direito sobre index.html e escolhendo "Open with Live Server".
+### 4. Execute com o **Live Server** clicando com o botão direito sobre index.html e escolhendo "Open with Live Server".
 
 Obs: **Certifique-se de que o backend (FastAPI) está rodando. (como informando no README.md do backend)**
 
@@ -79,3 +81,45 @@ Obs: **Certifique-se de que o backend (FastAPI) está rodando. (como informando 
     Visualização de pedidos existentes
     Filtro por status e e-mail
     Edição e exclusão de pedidos via modal
+
+### 📓 Segue documentação da API externa, no qual está sendo utilizada para carregar os produtos da API no projeto através de um GET.
+
+[Fake Store](https://fakestoreapi.com/docs#tag/Products)
+Obs: O projeto está com propensão de crescer, com cadastro de produtos, clientes e melhoria na estrutura de pedidos.
+
+## ⚙️ Rodando o projeto via Docker
+
+### 1. Crie uma pasta e clone o repositório abaixo: (esse repositório deve estar na mesma pasta junto ao repositório do back-end)
+
+### 📥 2. Clone o Repositório
+
+```bash
+git clone https://github.com/victorazevedo0/MVP_Sprint-3_Front-end.git
+```
+
+## 🐳 3. Rodando com Docker
+
+📌 Pré-requisitos
+
+Instale o Docker de acordo com seu sistema operacional:
+
+    📥 Windows
+    📥 Ubuntu
+    📥 MacOS
+
+    ⚠️ usuários de windows, é importante verificar [se a virtualização de sua máquina está ativada na BIOS de sua máquina](https://support.microsoft.com/pt-br/windows/habilitar-a-virtualiza%C3%A7%C3%A3o-no-windows-c5578302-6e43-4b4b-a449-8ced115f58e1), pois ela é fundamental para habilitação do WSL2. Em seguida, você deve seguir os passos de instalação e habilitação do [WSL2](https://learn.microsoft.com/pt-br/windows/wsl/install), para execução do Docker.
+
+
+### 4. Acesse a pasta que você criou onde já possui ou possuirá o também o repositório do back-end via Visual Studio Code (ou editor de sua preferência):
+
+```bash
+cd [pasta_que_voce_criou] > MVP_Sprint-3_Front-end
+```
+
+### 🧱 🚀 5. Construa a Imagem e Rode o container
+
+Dentro do vs code ou editor de sua preferência, acesse a pasta 
+
+```bash
+docker-compose up --build
+```
