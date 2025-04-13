@@ -97,7 +97,7 @@ Obs: O projeto está com propensão de crescer, com cadastro de produtos, client
 git clone https://github.com/victorazevedo0/MVP_Sprint-3_Front-end.git
 ```
 
-## 🐳 3. Rodando com Docker
+### 🐳 3. Instalando o Docker e o WSL2:
 
 📌 Pré-requisitos
 
