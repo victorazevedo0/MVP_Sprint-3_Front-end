@@ -32,6 +32,7 @@ Siga as etapas abaixo para rodar o frontend localmente.
 
 ### 📦 Estrutura de Diretórios
 
+```
 frontend/ 
     ├── app/ 
 _______├── static/ 
@@ -45,6 +46,7 @@ _______├── Dockerfile
 _______├── Docke-compose
 _______├── requirements.txt
 _______└── README.md
+```
 
 ## ▶️ Passos para execução local
 
